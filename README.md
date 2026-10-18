@@ -2,13 +2,11 @@
 
 A modern, responsive news website built with **HTML, CSS, and JavaScript**.
 
-Pulse News provides a clean reading experience with category filters, article search, favourites, and a dark mode for comfortable browsing.
+Pulse News provides a clean reading experience with category filters, article search, favourites, and dark mode for comfortable browsing.
 
 ## 🌐 Live Demo
 
-**[Visit Pulse News]([YOUR-LIVE-WEBSITE-URL](https://abdulrazaqismail333-debug.github.io/pulse-news/))**
-
-Replace `https://abdulrazaqismail333-debug.github.io/pulse-news/` with your actual GitHub Pages website link.
+[**Visit Pulse News**](https://abdulrazaqismail333-debug.github.io/pulse-news/)
 
 ## ✨ Features
 
@@ -16,7 +14,7 @@ Replace `https://abdulrazaqismail333-debug.github.io/pulse-news/` with your actu
 - 🗂️ **Category Filters:** Browse news by category.
 - ❤️ **Favourites:** Save articles and filter your favourite stories.
 - 🌙 **Dark Mode:** Switch between light and dark themes.
-- 📖 **Expandable Articles:** Show more or less of the featured story.
+- 📖 **Expandable Featured Story:** Show more or less of the featured story.
 - 🕒 **Live Date and Time:** Display the current date and time.
 - 📱 **Responsive Design:** Adapt the layout to smaller screens.
 - 💾 **Local Storage:** Remember your theme and saved favourites across refreshes.
@@ -33,7 +31,7 @@ Replace `https://abdulrazaqismail333-debug.github.io/pulse-news/` with your actu
 1. Clone this repository:
 
    ```bash
-   git clone YOUR-GITHUB-REPOSITORY-URL
+   git clone https://github.com/abdulrazaqismail333-debug/pulse-news.git
    ```
 
 2. Open the downloaded project folder.
@@ -47,8 +45,9 @@ Building Pulse News helped me practise:
 
 - Structuring a website with HTML.
 - Styling a responsive interface with CSS.
-- Using JavaScript to add interactive features.
+- Using JavaScript to create interactive features.
 - Working with browser Local Storage.
+- Implementing search, category filters, and favourites.
 - Publishing a website using GitHub Pages.
 
 ## 👨‍💻 Author
@@ -59,4 +58,4 @@ Frontend Developer in progress, passionate about building useful and user-friend
 
 ## 📄 License
 
-This project is available for learning and portfolio demonstration. Contact the author before reusing project assets or content that may belong to others.
+This project is available for learning and portfolio demonstration. Please contact the author before reusing project assets or content that may belong to others.
