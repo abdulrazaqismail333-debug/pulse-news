@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pulse News brings you world, technology, business, politics, entertainment, and sports headlines."
+    />
+    <title>Pulse News | Latest Headlines</title>
+    <link rel="stylesheet" href="news.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header id="home">
+      <p class="site-label">YOUR DAILY NEWS SOURCE</p>
+      <h1>PULSE <span>NEWS</span></h1>
+      <p>Your world. Your news. Stay informed.</p>
+
+      <div class="news-datetime">
+        <p id="current-date"></p>
+        <p id="current-time"></p>
+      </div>
+    </header>
+
+    <!-- MAIN NAVIGATION -->
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#world">World</a>
+      <a href="#politics">Politics</a>
+      <a href="#business">Business</a>
+      <a href="#technology">Technology</a>
+      <a href="#entertainment">Entertainment</a>
+      <a href="#sports">Sports</a>
+    </nav>
+
+    <!-- CATEGORY FILTERS -->
+    <div class="category-filters" aria-label="News categories">
+      <button type="button" class="category-btn active" data-category="all">
+        All News
+      </button>
+      <button type="button" class="category-btn" data-category="world">
+        World
+      </button>
+      <button type="button" class="category-btn" data-category="technology">
+        Technology
+      </button>
+      <button type="button" class="category-btn" data-category="business">
+        Business
+      </button>
+      <button type="button" class="category-btn" data-category="politics">
+        Politics
+      </button>
+      <button type="button" class="category-btn" data-category="entertainment">
+        Entertainment
+      </button>
+      <button type="button" class="category-btn" data-category="sports">
+        Sports
+      </button>
+    </div>
+
+    <!-- SEARCH AND DISPLAY CONTROLS -->
+    <div class="news-search">
+      <input
+        type="search"
+        id="news-search"
+        placeholder="Search news headlines..."
+        aria-label="Search news headlines"
+      />
+      <button type="button" id="clear-search">Clear</button>
+      <button type="button" id="show-favorites">❤️ Show Favourites</button>
+      <button type="button" id="theme-btn">🌙 Dark Mode</button>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="news-layout">
+      <!-- TOP STORIES -->
+      <section class="news-feed" aria-label="Latest news">
+        <div class="section-heading">
+          <p class="section-eyebrow">THE LATEST</p>
+          <h2>Top Stories</h2>
+          <p>Important headlines and stories worth your attention.</p>
+        </div>
+
+        <!-- FEATURED WORLD STORY -->
+        <article class="featured-article" id="world">
+          <div class="featured-label">FEATURED STORY</div>
+
+          <img
+            class="featured-image"
+            src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=80"
+            alt="International leaders gathered for a meeting"
+            loading="lazy"
+          />
+
+          <span class="news-category">WORLD NEWS</span>
+
+          <button class="favorite-btn" type="button" aria-pressed="false">
+            ♡ Add to Favourites
+          </button>
+
+          <h3>Petroleum Prices Rise Amid Global Tensions</h3>
+
+          <p class="article-preview">
+            Global petroleum prices have increased amid concerns about supply
+            disruptions and geopolitical tensions.
+          </p>
+
+          <p class="article-extra" hidden>
+            Changes in oil supply can affect fuel prices, transportation costs,
+            and the wider economy. Readers should follow reliable news sources
+            for the latest developments.
+          </p>
+
+          <button class="read-toggle" type="button">Show More</button>
+          <a href="#world" class="read-more">Read Story →</a>
+          <p class="article-meta">World News · Featured report</p>
+        </article>
+
+        <!-- TECHNOLOGY STORY -->
+        <article id="technology">
+          <img
+            class="article-image"
+            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80"
+            alt="Artificial intelligence technology concept"
+            loading="lazy"
+          />
+
+          <span class="news-category">TECHNOLOGY</span>
+
+          <button class="favorite-btn" type="button" aria-pressed="false">
+            ♡ Add to Favourites
+          </button>
+
+          <h3>How Artificial Intelligence Is Changing Everyday Technology</h3>
+
+          <p>
+            Smartphones, smartwatches, and other connected devices are
+            introducing new features powered by artificial intelligence. These
+            tools can help users edit photos, translate languages, monitor
+            activity, and complete everyday tasks more easily.
+          </p>
+
+          <a href="#technology" class="read-more">Read Story →</a>
+          <p class="article-meta">Technology · Innovation</p>
+        </article>
+
+        <!-- BUSINESS STORY -->
+        <article id="business">
+          <img
+            class="article-image"
+            src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1000&q=80"
+            alt="Financial market charts and trading information"
+            loading="lazy"
+          />
+
+          <span class="news-category">BUSINESS</span>
+
+          <button class="favorite-btn" type="button" aria-pressed="false">
+            ♡ Add to Favourites
+          </button>
+
+          <h3>Global Markets Watch Inflation and Energy Prices</h3>
+
+          <p>
+            Investors are watching inflation figures, interest-rate decisions,
+            and changes in energy prices. These factors can influence stock
+            markets, business costs, and consumer spending around the world.
+          </p>
+
+          <a href="#business" class="read-more">Read Story →</a>
+          <p class="article-meta">Business · Markets</p>
+        </article>
+      </section>
+
+      <!-- MORE HEADLINES -->
+      <aside id="more-headlines" aria-label="More headlines">
+        <div class="section-heading">
+          <p class="section-eyebrow">MORE TO EXPLORE</p>
+          <h2>More Headlines</h2>
+        </div>
+
+        <ul>
+          <!-- POLITICS -->
+          <li id="politics">
+            <article class="headline-card" data-category="politics">
+              <img
+                class="article-image"
+                src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80"
+                alt="Government and international policy meeting"
+                loading="lazy"
+              />
+
+              <span class="news-category">POLITICS</span>
+
+              <button class="favorite-btn" type="button" aria-pressed="false">
+                ♡ Add to Favourites
+              </button>
+
+              <h3>Climate Summit: Leaders Discuss Environmental Action</h3>
+
+              <p>
+                World leaders continue discussions on climate policy, renewable
+                energy, and ways to reduce environmental damage.
+              </p>
+
+              <a href="#politics" class="read-more">Read Story →</a>
+            </article>
+          </li>
+
+          <!-- ENTERTAINMENT -->
+          <li id="entertainment">
+            <article class="headline-card" data-category="entertainment">
+              <img
+                class="article-image"
+                src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=900&q=80"
+                alt="Cinema screen in a movie theatre"
+                loading="lazy"
+              />
+
+              <span class="news-category">ENTERTAINMENT</span>
+
+              <button class="favorite-btn" type="button" aria-pressed="false">
+                ♡ Add to Favourites
+              </button>
+
+              <h3>Entertainment Industry Embraces New Technology</h3>
+
+              <p>
+                Film, music, and digital media creators are exploring new tools
+                to improve production and reach audiences.
+              </p>
+
+              <a href="#entertainment" class="read-more">Read Story →</a>
+            </article>
+          </li>
+
+          <!-- SPORTS -->
+          <li id="sports">
+            <article class="headline-card" data-category="sports">
+              <img
+                class="article-image"
+                src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80"
+                alt="Athletes competing on a running track"
+                loading="lazy"
+              />
+
+              <span class="news-category">SPORTS</span>
+
+              <button class="favorite-btn" type="button" aria-pressed="false">
+                ♡ Add to Favourites
+              </button>
+
+              <h3>Sports Teams Prepare for Upcoming Competitions</h3>
+
+              <p>
+                Teams and athletes are preparing for upcoming fixtures as
+                supporters look forward to exciting competition.
+              </p>
+
+              <a href="#sports" class="read-more">Read Story →</a>
+            </article>
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- NEWSLETTER / READER MESSAGE -->
+    <section class="newsletter" aria-labelledby="newsletter-heading">
+      <p class="section-eyebrow">STAY INFORMED</p>
+      <h2 id="newsletter-heading">Your world moves fast.</h2>
+      <p>
+        Keep exploring the stories shaping technology, business, politics,
+        entertainment, sports, and the world around you.
+      </p>
+      <a href="#home" class="read-more">Back to the Top ↑</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <h2>PULSE <span>NEWS</span></h2>
+      <p>Your world. Your news. Stay informed.</p>
+      <p>&copy; 2026 Pulse News. All rights reserved.</p>
+      <a href="#home">Back to Home ↑</a>
+    </footer>
+
+    <script src="news.js"></script>
+  </body>
+</html>
